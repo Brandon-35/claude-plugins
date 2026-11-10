@@ -39,6 +39,13 @@
       "description": "Browse the open pull requests of the current repository in a pane beside the chat: files, diffs, reviews and comments. Read-only, through the gh CLI.",
       "version": "0.1.0",
       "category": "git"
+    },
+    {
+      "name": "bookmarks",
+      "source": "./plugins/bookmarks",
+      "description": "Mark lines in files, list them in a pane beside the chat, and jump back to the code around each one.",
+      "version": "0.1.0",
+      "category": "productivity"
     }
   ]
 }
