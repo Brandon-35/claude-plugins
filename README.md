@@ -20,7 +20,7 @@ Each plugin lives in its own folder under `plugins/<name>/` with its own README,
 | [format-on-edit](plugins/format-on-edit) | works (live-tested on 2.1.322) | Runs the project's local Prettier on every file Claude edits or writes and tells Claude when it reformatted; `/format-on-edit [on\|off]` |
 | [error-lens](plugins/error-lens) | works (live-tested on 2.1.322) | ESLint problems of each file Claude edits, under the edit, on the status line and fed back to Claude; `/problems` |
 
-Which extensions these are modelled on, and why: [docs/research.md](docs/research.md).
+Which extensions these are modelled on, and why: [docs/research.md](docs/research.md). Theme plugins (`github-theme`, `one-dark-pro`) are picked with `/theme` after install.
 
 ## Install
 
