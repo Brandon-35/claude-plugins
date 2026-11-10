@@ -1,0 +1,9 @@
+{
+  "name": "github-theme",
+  "version": "0.1.0",
+  "description": "GitHub Dark and GitHub Light color themes for the terminal interface, picked with /theme.",
+  "author": { "name": "Brandon Ta" },
+  "license": "MIT",
+  "repository": "https://github.com/Brandon-35/claude-plugins",
+  "keywords": ["theme", "colors", "github", "dark", "light"]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "one-dark-pro",
+  "version": "0.1.0",
+  "description": "The One Dark Pro color theme for the terminal interface, picked with /theme.",
+  "author": { "name": "Brandon Ta" },
+  "license": "MIT",
+  "repository": "https://github.com/Brandon-35/claude-plugins",
+  "keywords": ["theme", "colors", "one-dark", "atom", "dark"]
+}

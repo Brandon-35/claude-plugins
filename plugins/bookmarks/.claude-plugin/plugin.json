@@ -1,0 +1,10 @@
+{
+  "name": "bookmarks",
+  "version": "0.1.0",
+  "description": "Mark lines in files, list them in a pane beside the chat, and jump back to the code around each one.",
+  "author": { "name": "Brandon Ta" },
+  "license": "MIT",
+  "repository": "https://github.com/Brandon-35/claude-plugins",
+  "keywords": ["bookmarks", "navigation", "files", "pane", "mod"],
+  "types": "./types/index.d.ts"
+}
