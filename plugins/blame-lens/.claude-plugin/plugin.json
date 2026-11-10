@@ -1,0 +1,10 @@
+{
+  "name": "blame-lens",
+  "version": "0.1.0",
+  "description": "Inline git blame for the lines Claude edits, under the Edit's row and on the status line, plus /blame for any file or line range.",
+  "author": { "name": "Brandon Ta" },
+  "license": "MIT",
+  "repository": "https://github.com/Brandon-35/claude-plugins",
+  "keywords": ["git", "blame", "history", "mod"],
+  "types": "./types/index.d.ts"
+}
