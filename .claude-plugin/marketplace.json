@@ -39,6 +39,13 @@
       "description": "Browse the open pull requests of the current repository in a pane beside the chat: files, diffs, reviews and comments. Read-only, through the gh CLI.",
       "version": "0.1.0",
       "category": "git"
+    },
+    {
+      "name": "todo-tree",
+      "source": "./plugins/todo-tree",
+      "description": "Every TODO, FIXME, HACK, BUG and XXX comment tag of the repository in a pane beside the chat; pick one to see its context.",
+      "version": "0.1.0",
+      "category": "productivity"
     }
   ]
 }
