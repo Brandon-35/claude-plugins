@@ -15,8 +15,8 @@ Needs Claude Code 2.1.322 or newer and the [GitHub CLI](https://cli.github.com) 
 
 | Command | What it does |
 | --- | --- |
-| `/pr` | Lists the open pull requests of the current repository (up to 30) |
-| `/pr <number>` | Opens that pull request |
+| `/pr-review` | Lists the open pull requests of the current repository (up to 30) |
+| `/pr-review <number>` | Opens that pull request |
 
 The pane takes the keyboard when it opens: `Tab` / arrows walk the rows, `Enter` opens a pull request or a file's diff, `b` goes back one level, `PageDown` / arrows scroll, `Esc` returns to the prompt.
 
@@ -27,7 +27,7 @@ The pane takes the keyboard when it opens: `Tab` / arrows walk the rows, `Enter`
 Claude Code 2.1.322, plugin installed from a local marketplace (`claude plugin marketplace add <path> --scope local`, `claude plugin install pr-review@brandon-35-plugins --scope local`), in a folder whose `origin` is this repository.
 
 ```
-❯ /pr
+❯ /pr-review
   ⎿  pr-review: Pull requests opened.
 
 │#6 feat(git-compare): compare refs and folders in a pane Brandon-35 · git-compare
@@ -77,7 +77,7 @@ Claude Code 2.1.322, plugin installed from a local marketplace (`claude plugin m
 A merged pull request, and the error paths:
 
 ```
-❯ /pr 2
+❯ /pr-review 2
 │#2 Scaffold: research, marketplace manifest, install notes
 │MERGED  scaffold → main  by Brandon-35
 │+106 −1, 4 files
@@ -85,9 +85,9 @@ A merged pull request, and the error paths:
 │Reviews and comments
 │No reviews or comments.
 
-❯ /pr abc
-  ⎿  pr-review: Usage: /pr [number]
-❯ /pr 999
+❯ /pr-review abc
+  ⎿  pr-review: Usage: /pr-review [number]
+❯ /pr-review 999
 │GraphQL: Could not resolve to a PullRequest with the number of 999.
 ```
 

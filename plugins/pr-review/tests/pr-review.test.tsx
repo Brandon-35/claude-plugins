@@ -116,10 +116,10 @@ for (const surface of ['terminal', 'desktop'] as const) {
   test(`list, PR view and file diff (${surface})`, async ($, on) => {
     on('process.run', (_, e) => gh(e.argv))
     on('ui.open', () => ({ value: { isPlaced: true } }))
-    on('command.register', () => ({ value: { command: 'pr' } }))
+    on('command.register', () => ({ value: { command: 'pr-review' } }))
     on('session.start', (_, e) => ({ cwd: e.cwd }))
     await $.session.start({ cwd: '/', surface, isInteractive: true })
-    await $.command.run({ ...RUN, command: 'pr', args: '' })
+    await $.command.run({ ...RUN, command: 'pr-review', args: '' })
 
     const ui = await $.ui.mount({ ...PANE, surface })
     const row = await ui.find({ type: 'Button', text: /feat: commit graph pane/ })
@@ -150,21 +150,21 @@ for (const surface of ['terminal', 'desktop'] as const) {
 }
 
 test('/pr rejects a non-numeric argument', async ($, on) => {
-  on('command.register', () => ({ value: { command: 'pr' } }))
+  on('command.register', () => ({ value: { command: 'pr-review' } }))
   on('session.start', (_, e) => ({ cwd: e.cwd }))
   await $.session.start({ cwd: '/', surface: 'terminal', isInteractive: true })
-  const out = await $.command.run({ ...RUN, command: 'pr', args: 'abc' })
-  expect(JSON.stringify(out)).toContain('Usage: /pr [number]')
+  const out = await $.command.run({ ...RUN, command: 'pr-review', args: 'abc' })
+  expect(JSON.stringify(out)).toContain('Usage: /pr-review [number]')
 })
 
 test('a gh failure is answered as text, not thrown', async ($, on) => {
   on('process.run', () =>
     reply(1, '', 'To get started with GitHub CLI, please run:  gh auth login\nmore'),
   )
-  on('command.register', () => ({ value: { command: 'pr' } }))
+  on('command.register', () => ({ value: { command: 'pr-review' } }))
   on('session.start', (_, e) => ({ cwd: e.cwd }))
   await $.session.start({ cwd: '/', surface: 'terminal', isInteractive: true })
-  const out = await $.command.run({ ...RUN, command: 'pr', args: '' })
+  const out = await $.command.run({ ...RUN, command: 'pr-review', args: '' })
   expect(JSON.stringify(out)).toContain('gh auth login')
   expect(JSON.stringify(out)).not.toContain('more')
 

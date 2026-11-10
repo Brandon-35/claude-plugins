@@ -8,7 +8,7 @@ Each plugin lives in its own folder under `plugins/<name>/` with its own README,
 
 | Plugin | Status | What it does |
 | ------ | ------ | ------------ |
-| [pr-review](plugins/pr-review) | works (live-tested on 2.1.322) | `/pr [number]`: a pull request's description, files, diffs, reviews and comments in a pane (read-only, needs `gh`) |
+| [pr-review](plugins/pr-review) | works (live-tested on 2.1.322) | `/pr-review [number]`: a pull request's description, files, diffs, reviews and comments in a pane (read-only, needs `gh`) |
 
 ## Install
 

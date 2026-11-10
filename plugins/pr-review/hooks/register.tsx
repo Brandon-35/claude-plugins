@@ -29,16 +29,16 @@ const STATE_COLOR = { OPEN: 'success', MERGED: 'merged', CLOSED: 'error' } as co
 export const register: Register = on => {
   on('session.start', async ($, e, next) => {
     await $.command.register({
-      name: 'pr',
+      name: 'pr-review',
       description: 'Browse pull requests of this repository in a pane',
       argumentHint: '[number]',
     })
     return next(e)
   })
 
-  on('command.run', { command: 'pr' }, async ($, e) => {
+  on('command.run', { command: 'pr-review' }, async ($, e) => {
     const arg = e.args.trim()
-    if (arg !== '' && !/^\d+$/.test(arg)) return { text: 'Usage: /pr [number]' }
+    if (arg !== '' && !/^\d+$/.test(arg)) return { text: 'Usage: /pr-review [number]' }
     const n = arg === '' ? null : Number.parseInt(arg, 10)
     const probe = await $.process.run(probeArgv()).catch(err => ({
       exitCode: 1,
