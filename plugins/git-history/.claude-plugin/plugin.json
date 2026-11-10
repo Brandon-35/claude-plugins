@@ -1,0 +1,10 @@
+{
+  "name": "git-history",
+  "version": "0.1.0",
+  "description": "The history of one file in a pane beside the chat, following renames; pick a commit to see that file's diff.",
+  "author": { "name": "Brandon Ta" },
+  "license": "MIT",
+  "repository": "https://github.com/Brandon-35/claude-plugins",
+  "keywords": ["git", "history", "file", "blame", "diff", "mod"],
+  "types": "./types/index.d.ts"
+}

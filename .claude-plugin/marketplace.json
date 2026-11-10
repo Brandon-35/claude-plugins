@@ -18,6 +18,13 @@
       "description": "Inline git blame for the lines Claude edits, under the Edit's row and on the status line, plus /blame for any file or line range.",
       "version": "0.1.0",
       "category": "git"
+    },
+    {
+      "name": "git-history",
+      "source": "./plugins/git-history",
+      "description": "The history of one file in a pane beside the chat, following renames; pick a commit to see that file's diff.",
+      "version": "0.1.0",
+      "category": "git"
     }
   ]
 }
