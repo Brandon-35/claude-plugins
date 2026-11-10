@@ -8,7 +8,7 @@ Each plugin lives in its own folder under `plugins/<name>/` with its own README,
 
 | Plugin | Status | What it does |
 | ------ | ------ | ------------ |
-| _first batch in progress_ | planned | Git diff and history tooling inspired by the most-installed VS Code git extensions ([research](docs/research.md)) |
+| [git-compare](plugins/git-compare) | works (live-tested on 2.1.322) | `/compare <ref-a> [ref-b]` and `/compare-dirs <a> <b>`: changed files with line counts, and each file's diff |
 
 ## Install
 
