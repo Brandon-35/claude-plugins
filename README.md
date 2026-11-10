@@ -18,6 +18,7 @@ Each plugin lives in its own folder under `plugins/<name>/` with its own README,
 | [todo-tree](plugins/todo-tree) | works (live-tested on 2.1.322) | `/todos [tag]`: every TODO/FIXME/HACK/BUG/XXX comment grouped by file in a pane; pick one for the code around it |
 | [bookmarks](plugins/bookmarks) | works (live-tested on 2.1.322) | `/bookmark <file>[:line] [note]` and `/bookmarks`: per-project line bookmarks kept across sessions, listed in a pane |
 | [format-on-edit](plugins/format-on-edit) | works (live-tested on 2.1.322) | Runs the project's local Prettier on every file Claude edits or writes and tells Claude when it reformatted; `/format-on-edit [on\|off]` |
+| [error-lens](plugins/error-lens) | works (live-tested on 2.1.322) | ESLint problems of each file Claude edits, under the edit, on the status line and fed back to Claude; `/problems` |
 
 Which extensions these are modelled on, and why: [docs/research.md](docs/research.md).
 

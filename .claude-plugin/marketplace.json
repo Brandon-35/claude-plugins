@@ -74,6 +74,13 @@
       "description": "Format on save for Claude: runs the project's own prettier on every file an Edit or Write touched, marks the row, and tells the model to re-read a reformatted file.",
       "version": "0.1.0",
       "category": "productivity"
+    },
+    {
+      "name": "error-lens",
+      "source": "./plugins/error-lens",
+      "description": "ESLint problems for the files Claude edits, under the tool's row, on the status line and in the tool result, plus /problems for the session's list.",
+      "version": "0.1.0",
+      "category": "productivity"
     }
   ]
 }
