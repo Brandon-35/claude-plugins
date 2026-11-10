@@ -8,7 +8,10 @@ Each plugin lives in its own folder under `plugins/<name>/` with its own README,
 
 | Plugin | Status | What it does |
 | ------ | ------ | ------------ |
+| [git-graph](plugins/git-graph) | works (live-tested on 2.1.322) | `/git-graph`: commit graph of every branch in a pane; pick a commit for its details and diff |
 | [blame-lens](plugins/blame-lens) | works (live-tested on 2.1.322) | Inline git blame under every `Edit` Claude makes and on the status line; `/blame <file>[:line[-line]]` |
+
+Which extensions these are modelled on, and why: [docs/research.md](docs/research.md).
 
 ## Install
 
