@@ -8,7 +8,7 @@ Each plugin lives in its own folder under `plugins/<name>/` with its own README,
 
 | Plugin | Status | What it does |
 | ------ | ------ | ------------ |
-| _first batch in progress_ | planned | Git diff and history tooling inspired by the most-installed VS Code git extensions ([research](docs/research.md)) |
+| [git-history](plugins/git-history) | works (live-tested on 2.1.322) | `/file-history <path>`: the commits that touched a file (renames followed) and its diff in each |
 
 ## Install
 

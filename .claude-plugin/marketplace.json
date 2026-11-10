@@ -1,6 +1,16 @@
 {
   "name": "brandon-35-plugins",
-  "owner": { "name": "Brandon Ta" },
+  "owner": {
+    "name": "Brandon Ta"
+  },
   "description": "Open-source Claude Code plugins and mods by Brandon Ta.",
-  "plugins": []
+  "plugins": [
+    {
+      "name": "git-history",
+      "source": "./plugins/git-history",
+      "description": "The history of one file in a pane beside the chat, following renames; pick a commit to see that file's diff.",
+      "version": "0.1.0",
+      "category": "git"
+    }
+  ]
 }
