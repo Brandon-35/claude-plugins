@@ -8,7 +8,20 @@ Each plugin lives in its own folder under `plugins/<name>/` with its own README,
 
 | Plugin | Status | What it does |
 | ------ | ------ | ------------ |
-| _first batch in progress_ | planned | Git diff and history tooling inspired by the most-installed VS Code git extensions |
+| _first batch in progress_ | planned | Git diff and history tooling inspired by the most-installed VS Code git extensions ([research](docs/research.md)) |
+
+## Install
+
+Add this repository as a marketplace once, then install any plugin from it:
+
+```
+claude plugin marketplace add Brandon-35/claude-plugins
+claude plugin install <plugin>@brandon-35-plugins
+```
+
+Or, at the prompt of a terminal session: `/plugin install <plugin> --marketplace Brandon-35/claude-plugins`.
+
+The plugins are mods: they need Claude Code 2.1.322 or newer. Panes dock beside the chat in the fullscreen layout (`"tui": "fullscreen"`).
 
 ## Contributing
 
