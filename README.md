@@ -8,7 +8,9 @@ Each plugin lives in its own folder under `plugins/<name>/` with its own README,
 
 | Plugin | Status | What it does |
 | ------ | ------ | ------------ |
-| _first batch in progress_ | planned | Git diff and history tooling inspired by the most-installed VS Code git extensions ([research](docs/research.md)) |
+| [git-graph](plugins/git-graph) | works (live-tested on 2.1.322) | `/git-graph`: commit graph of every branch in a pane; pick a commit for its details and diff |
+
+Which extensions these are modelled on, and why: [docs/research.md](docs/research.md).
 
 ## Install
 
