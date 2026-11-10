@@ -39,6 +39,13 @@
       "description": "Browse the open pull requests of the current repository in a pane beside the chat: files, diffs, reviews and comments. Read-only, through the gh CLI.",
       "version": "0.1.0",
       "category": "git"
+    },
+    {
+      "name": "github-theme",
+      "source": "./plugins/github-theme",
+      "description": "GitHub Dark and GitHub Light color themes for the terminal interface, picked with /theme.",
+      "version": "0.1.0",
+      "category": "theme"
     }
   ]
 }
