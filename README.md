@@ -13,6 +13,11 @@ Each plugin lives in its own folder under `plugins/<name>/` with its own README,
 | [git-history](plugins/git-history) | works (live-tested on 2.1.322) | `/file-history <path>`: the commits that touched a file (renames followed) and its diff in each |
 | [git-compare](plugins/git-compare) | works (live-tested on 2.1.322) | `/compare <ref-a> [ref-b]` and `/compare-dirs <a> <b>`: changed files with line counts, and each file's diff |
 | [pr-review](plugins/pr-review) | works (live-tested on 2.1.322) | `/pr-review [number]`: a pull request's description, files, diffs, reviews and comments in a pane (read-only, needs `gh`) |
+| [github-theme](plugins/github-theme) | works (live-tested on 2.1.322) | GitHub Dark and GitHub Light color themes, picked with `/theme` |
+| [one-dark-pro](plugins/one-dark-pro) | works (live-tested on 2.1.322) | The One Dark Pro color theme, picked with `/theme` |
+| [todo-tree](plugins/todo-tree) | works (live-tested on 2.1.322) | `/todos [tag]`: every TODO/FIXME/HACK/BUG/XXX comment grouped by file in a pane; pick one for the code around it |
+| [bookmarks](plugins/bookmarks) | works (live-tested on 2.1.322) | `/bookmark <file>[:line] [note]` and `/bookmarks`: per-project line bookmarks kept across sessions, listed in a pane |
+| [format-on-edit](plugins/format-on-edit) | works (live-tested on 2.1.322) | Runs the project's local Prettier on every file Claude edits or writes and tells Claude when it reformatted; `/format-on-edit [on\|off]` |
 | [error-lens](plugins/error-lens) | works (live-tested on 2.1.322) | ESLint problems of each file Claude edits, under the edit, on the status line and fed back to Claude; `/problems` |
 
 Which extensions these are modelled on, and why: [docs/research.md](docs/research.md).
