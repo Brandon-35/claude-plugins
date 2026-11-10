@@ -68,7 +68,7 @@ picked because it fits one of those extension points.
 - **Compare → `git-compare`.** `/compare <ref-a> [ref-b]` lists changed files
   with line counts; picking one shows its diff. `/compare-dirs <a> <b>` does the
   same for two folders through `git diff --no-index`.
-- **Pull requests → `pr-review`.** `/pr [number]` opens a pane with the PR's
+- **Pull requests → `pr-review`.** `/pr-review [number]` opens a pane with the PR's
   title, state, description, changed files with diffs, and review comments,
   read through the `gh` CLI.
 
@@ -83,3 +83,46 @@ picked because it fits one of those extension points.
 | Writing PR review comments, approving, merging | Writes to GitHub from a pane button bypass permission prompts; `pr-review` is read-only. |
 | GitLens AI commit explanations | Claude itself does that already. |
 | Line history (Git History "history of a line") | Covered by `/blame <file>:<line>` plus `/file-history`; a separate view added little. |
+
+## Second batch: themes and everyday extensions
+
+Queried from the Marketplace gallery API on 2026-11-10, sorted by installs, in the Themes, Formatters and Linters categories and for the search terms `todo`, `error`, `bookmarks`, `spell` and `time tracking`.
+
+### Themes
+
+| Extension | Installs | Plugin |
+| --- | --- | --- |
+| [GitHub Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme) | 20,587,629 | `github-theme` (GitHub Dark, GitHub Light) |
+| [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) | 12,912,152 | `one-dark-pro` |
+
+These are the two most-installed color themes. Ranked above them in the Themes category are C/C++ Themes (61,446,744; installed as a dependency of the C/C++ extension), two file icon themes (Material Icon Theme, vscode-icons) and PowerShell, none of which is a color theme a person picks. Next in line: Dracula Theme Official (11,133,216) and Atom One Dark Theme (7,413,097).
+
+A Claude Code theme plugin is data: `themes/<slug>.json` with a `name`, a built-in `base` (`dark`, `light`, …) and `overrides` of the terminal theme's color keys. The person picks it with `/theme`.
+
+### Everyday extensions
+
+| Extension | Installs | Feature taken | Plugin |
+| --- | --- | --- | --- |
+| [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) | 72,858,534 | Format on save | `format-on-edit` |
+| [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) | 53,757,161 | Lint the open file | `error-lens` |
+| [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens) | 10,284,031 | Diagnostics shown inline, at the line | `error-lens` |
+| [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) | 7,916,940 | Tree of TODO/FIXME comment tags | `todo-tree` |
+| [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) | 5,214,851 | Mark lines and jump back to them | `bookmarks` |
+
+They were chosen for what they add to a session where Claude does the editing:
+
+- **Format on save → `format-on-edit`.** Claude's `Edit` and `Write` are the "save". The project's local Prettier runs on the written file, and a hidden note tells Claude the file changed so its next edit does not fail on stale text.
+- **Inline diagnostics → `error-lens`.** The problems of the file Claude just edited are drawn under that edit and handed back to Claude in the same turn, instead of surfacing at the next build.
+- **Todo Tree → `todo-tree`.** `/todos` lists comment tags by file in a pane.
+- **Bookmarks → `bookmarks`.** `/bookmark` and `/bookmarks` keep per-project marks across sessions and hand the list to Claude.
+
+### Skipped in this batch
+
+| Extension | Installs | Why it was skipped |
+| --- | --- | --- |
+| Material Icon Theme, vscode-icons | 36,182,246 / 24,806,190 | File icon themes: the terminal interface draws no file icons. |
+| Code Spell Checker | 18,603,677 | Needs a bundled dictionary, and these plugins take no runtime dependency. |
+| WakaTime | 23,108,823 | Sends activity to an external service; a local-only tracker would not be the same feature. |
+| Live Server | 84,301,216 | Starting a dev server is already a Bash tool call for Claude. |
+| Better Comments, TODO Highlight | 10,791,220 / 6,191,908 | Comment colouring in an editor; there is no editor view to colour. `todo-tree` covers finding the tags. |
+| Dracula, Atom One Dark and further themes | 11,133,216 / 7,413,097 | Out of scope for two theme plugins; the same `themes/*.json` format fits them. |
