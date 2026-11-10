@@ -39,6 +39,13 @@
       "description": "Browse the open pull requests of the current repository in a pane beside the chat: files, diffs, reviews and comments. Read-only, through the gh CLI.",
       "version": "0.1.0",
       "category": "git"
+    },
+    {
+      "name": "format-on-edit",
+      "source": "./plugins/format-on-edit",
+      "description": "Format on save for Claude: runs the project's own prettier on every file an Edit or Write touched, marks the row, and tells the model to re-read a reformatted file.",
+      "version": "0.1.0",
+      "category": "productivity"
     }
   ]
 }
