@@ -1,0 +1,10 @@
+{
+  "name": "todo-tree",
+  "version": "0.1.0",
+  "description": "Every TODO, FIXME, HACK, BUG and XXX comment tag of the repository in a pane beside the chat; pick one to see its context.",
+  "author": { "name": "Brandon Ta" },
+  "license": "MIT",
+  "repository": "https://github.com/Brandon-35/claude-plugins",
+  "keywords": ["todo", "fixme", "tags", "git", "grep", "mod"],
+  "types": "./types/index.d.ts"
+}
