@@ -161,7 +161,7 @@ test('the command answers usage, and a missing history opens nothing', async ($,
     'Usage: /file-history <path>',
   )
   expect((await $.command.run(run('nope.py'))).text).toContain(
-    'no history',
+    'No history',
   )
   expect(opened).toBe(false)
 })
