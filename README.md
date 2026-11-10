@@ -8,7 +8,13 @@ Each plugin lives in its own folder under `plugins/<name>/` with its own README,
 
 | Plugin | Status | What it does |
 | ------ | ------ | ------------ |
+| [git-graph](plugins/git-graph) | works (live-tested on 2.1.322) | `/git-graph`: commit graph of every branch in a pane; pick a commit for its details and diff |
+| [blame-lens](plugins/blame-lens) | works (live-tested on 2.1.322) | Inline git blame under every `Edit` Claude makes and on the status line; `/blame <file>[:line[-line]]` |
+| [git-history](plugins/git-history) | works (live-tested on 2.1.322) | `/file-history <path>`: the commits that touched a file (renames followed) and its diff in each |
+| [git-compare](plugins/git-compare) | works (live-tested on 2.1.322) | `/compare <ref-a> [ref-b]` and `/compare-dirs <a> <b>`: changed files with line counts, and each file's diff |
 | [pr-review](plugins/pr-review) | works (live-tested on 2.1.322) | `/pr-review [number]`: a pull request's description, files, diffs, reviews and comments in a pane (read-only, needs `gh`) |
+
+Which extensions these are modelled on, and why: [docs/research.md](docs/research.md).
 
 ## Install
 
