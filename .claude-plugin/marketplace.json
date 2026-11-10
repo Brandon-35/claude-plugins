@@ -46,6 +46,13 @@
       "description": "GitHub Dark and GitHub Light color themes for the terminal interface, picked with /theme.",
       "version": "0.1.0",
       "category": "theme"
+    },
+    {
+      "name": "one-dark-pro",
+      "source": "./plugins/one-dark-pro",
+      "description": "The One Dark Pro color theme for the terminal interface, picked with /theme.",
+      "version": "0.1.0",
+      "category": "theme"
     }
   ]
 }
