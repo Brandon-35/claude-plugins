@@ -1,0 +1,10 @@
+{
+  "name": "git-graph",
+  "version": "0.1.0",
+  "description": "A commit graph of every branch in a pane beside the chat; pick a commit to see its details and diff.",
+  "author": { "name": "Brandon Ta" },
+  "license": "MIT",
+  "repository": "https://github.com/Brandon-35/claude-plugins",
+  "keywords": ["git", "graph", "history", "diff", "mod"],
+  "types": "./types/index.d.ts"
+}
