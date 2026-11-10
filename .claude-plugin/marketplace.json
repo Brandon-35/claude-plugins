@@ -39,6 +39,13 @@
       "description": "Browse the open pull requests of the current repository in a pane beside the chat: files, diffs, reviews and comments. Read-only, through the gh CLI.",
       "version": "0.1.0",
       "category": "git"
+    },
+    {
+      "name": "error-lens",
+      "source": "./plugins/error-lens",
+      "description": "ESLint problems for the files Claude edits, under the tool's row, on the status line and in the tool result, plus /problems for the session's list.",
+      "version": "0.1.0",
+      "category": "productivity"
     }
   ]
 }
