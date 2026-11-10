@@ -15,6 +15,7 @@ Each plugin lives in its own folder under `plugins/<name>/` with its own README,
 | [pr-review](plugins/pr-review) | works (live-tested on 2.1.322) | `/pr-review [number]`: a pull request's description, files, diffs, reviews and comments in a pane (read-only, needs `gh`) |
 | [github-theme](plugins/github-theme) | works (live-tested on 2.1.322) | GitHub Dark and GitHub Light color themes, picked with `/theme` |
 | [one-dark-pro](plugins/one-dark-pro) | works (live-tested on 2.1.322) | The One Dark Pro color theme, picked with `/theme` |
+| [todo-tree](plugins/todo-tree) | works (live-tested on 2.1.322) | `/todos [tag]`: every TODO/FIXME/HACK/BUG/XXX comment grouped by file in a pane; pick one for the code around it |
 
 Which extensions these are modelled on, and why: [docs/research.md](docs/research.md).
 

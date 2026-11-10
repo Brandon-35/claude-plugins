@@ -53,6 +53,13 @@
       "description": "The One Dark Pro color theme for the terminal interface, picked with /theme.",
       "version": "0.1.0",
       "category": "theme"
+    },
+    {
+      "name": "todo-tree",
+      "source": "./plugins/todo-tree",
+      "description": "Every TODO, FIXME, HACK, BUG and XXX comment tag of the repository in a pane beside the chat; pick one to see its context.",
+      "version": "0.1.0",
+      "category": "productivity"
     }
   ]
 }
