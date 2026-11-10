@@ -1,6 +1,16 @@
 {
   "name": "brandon-35-plugins",
-  "owner": { "name": "Brandon Ta" },
+  "owner": {
+    "name": "Brandon Ta"
+  },
   "description": "Open-source Claude Code plugins and mods by Brandon Ta.",
-  "plugins": []
+  "plugins": [
+    {
+      "name": "blame-lens",
+      "source": "./plugins/blame-lens",
+      "description": "Inline git blame for the lines Claude edits, under the Edit's row and on the status line, plus /blame for any file or line range.",
+      "version": "0.1.0",
+      "category": "git"
+    }
+  ]
 }

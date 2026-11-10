@@ -8,7 +8,7 @@ Each plugin lives in its own folder under `plugins/<name>/` with its own README,
 
 | Plugin | Status | What it does |
 | ------ | ------ | ------------ |
-| _first batch in progress_ | planned | Git diff and history tooling inspired by the most-installed VS Code git extensions ([research](docs/research.md)) |
+| [blame-lens](plugins/blame-lens) | works (live-tested on 2.1.322) | Inline git blame under every `Edit` Claude makes and on the status line; `/blame <file>[:line[-line]]` |
 
 ## Install
 
