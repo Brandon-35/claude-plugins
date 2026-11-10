@@ -1,0 +1,10 @@
+{
+  "name": "git-compare",
+  "version": "0.1.0",
+  "description": "Compare two refs or two folders in a pane beside the chat; pick a changed file to see its diff.",
+  "author": { "name": "Brandon Ta" },
+  "license": "MIT",
+  "repository": "https://github.com/Brandon-35/claude-plugins",
+  "keywords": ["git", "compare", "diff", "folders", "mod"],
+  "types": "./types/index.d.ts"
+}

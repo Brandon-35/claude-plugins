@@ -25,6 +25,13 @@
       "description": "The history of one file in a pane beside the chat, following renames; pick a commit to see that file's diff.",
       "version": "0.1.0",
       "category": "git"
+    },
+    {
+      "name": "git-compare",
+      "source": "./plugins/git-compare",
+      "description": "Compare two refs or two folders in a pane beside the chat; pick a changed file to see its diff.",
+      "version": "0.1.0",
+      "category": "git"
     }
   ]
 }
