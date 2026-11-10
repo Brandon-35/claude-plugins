@@ -1,6 +1,16 @@
 {
   "name": "brandon-35-plugins",
-  "owner": { "name": "Brandon Ta" },
+  "owner": {
+    "name": "Brandon Ta"
+  },
   "description": "Open-source Claude Code plugins and mods by Brandon Ta.",
-  "plugins": []
+  "plugins": [
+    {
+      "name": "pr-review",
+      "source": "./plugins/pr-review",
+      "description": "Browse the open pull requests of the current repository in a pane beside the chat: files, diffs, reviews and comments. Read-only, through the gh CLI.",
+      "version": "0.1.0",
+      "category": "git"
+    }
+  ]
 }

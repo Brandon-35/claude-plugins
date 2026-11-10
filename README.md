@@ -8,7 +8,7 @@ Each plugin lives in its own folder under `plugins/<name>/` with its own README,
 
 | Plugin | Status | What it does |
 | ------ | ------ | ------------ |
-| _first batch in progress_ | planned | Git diff and history tooling inspired by the most-installed VS Code git extensions ([research](docs/research.md)) |
+| [pr-review](plugins/pr-review) | works (live-tested on 2.1.322) | `/pr [number]`: a pull request's description, files, diffs, reviews and comments in a pane (read-only, needs `gh`) |
 
 ## Install
 

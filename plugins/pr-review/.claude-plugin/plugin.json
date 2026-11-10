@@ -1,0 +1,10 @@
+{
+  "name": "pr-review",
+  "version": "0.1.0",
+  "description": "Browse the open pull requests of the current repository in a pane beside the chat: files, diffs, reviews and comments. Read-only, through the gh CLI.",
+  "author": { "name": "Brandon Ta" },
+  "license": "MIT",
+  "repository": "https://github.com/Brandon-35/claude-plugins",
+  "keywords": ["github", "pull-request", "review", "diff", "gh", "mod"],
+  "types": "./types/index.d.ts"
+}
