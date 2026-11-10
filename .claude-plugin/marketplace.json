@@ -60,6 +60,13 @@
       "description": "Every TODO, FIXME, HACK, BUG and XXX comment tag of the repository in a pane beside the chat; pick one to see its context.",
       "version": "0.1.0",
       "category": "productivity"
+    },
+    {
+      "name": "bookmarks",
+      "source": "./plugins/bookmarks",
+      "description": "Mark lines in files, list them in a pane beside the chat, and jump back to the code around each one.",
+      "version": "0.1.0",
+      "category": "productivity"
     }
   ]
 }

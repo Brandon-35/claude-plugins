@@ -16,6 +16,7 @@ Each plugin lives in its own folder under `plugins/<name>/` with its own README,
 | [github-theme](plugins/github-theme) | works (live-tested on 2.1.322) | GitHub Dark and GitHub Light color themes, picked with `/theme` |
 | [one-dark-pro](plugins/one-dark-pro) | works (live-tested on 2.1.322) | The One Dark Pro color theme, picked with `/theme` |
 | [todo-tree](plugins/todo-tree) | works (live-tested on 2.1.322) | `/todos [tag]`: every TODO/FIXME/HACK/BUG/XXX comment grouped by file in a pane; pick one for the code around it |
+| [bookmarks](plugins/bookmarks) | works (live-tested on 2.1.322) | `/bookmark <file>[:line] [note]` and `/bookmarks`: per-project line bookmarks kept across sessions, listed in a pane |
 
 Which extensions these are modelled on, and why: [docs/research.md](docs/research.md).
 
